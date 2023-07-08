@@ -1,12 +1,17 @@
-import BasicForm from "./components/BasicForm";
-import SimpleInput from "./components/SimpleInput";
+import Navbar from "./components/Navbar";
+import classes from "./App.module.css";
 
-function App() {
+import Form from "./components/Form";
+
+const App = () => {
   return (
-    <div className="app">
-      <BasicForm />
-    </div>
+    <>
+      <Navbar />
+      <div className={classes.body}>
+        <Form />
+      </div>
+    </>
   );
-}
+};
 
 export default App;
